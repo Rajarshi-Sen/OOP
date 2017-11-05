@@ -1,0 +1,224 @@
+Script started on Sun Nov  5 08:21:13 2017
+]0;z1816768@turing: ~/csci_689-0001/assign8z1816768@turing:~/csci_689-0001/assign8$ ls
+Makefile  amenity.cc  amenity.dat  amenity.h  assign8.cc  assign8.h  math_vector.cc  math_vector.h  output  sort_print.cc  sort_print.h
+]0;z1816768@turing: ~/csci_689-0001/assign8z1816768@turing:~/csci_689-0001/assign8$ make
+g++ -Wall -std=c++11 -c assign8.cc
+g++ -Wall -std=c++11 -c amenity.cc
+g++ -Wall -std=c++11 -c math_vector.cc
+g++ -Wall -std=c++11 -c sort_print.cc
+g++ -Wall -std=c++11 -o assign8 assign8.o amenity.o math_vector.o sort_print.o
+]0;z1816768@turing: ~/csci_689-0001/assign8z1816768@turing:~/csci_689-0001/assign8$ ls
+Makefile    amenity.dat  amenity.o  assign8.cc  assign8.o       math_vector.h  output         sort_print.h
+amenity.cc  amenity.h    [0m[01;32massign8[0m    assign8.h   math_vector.cc  math_vector.o  sort_print.cc  sort_print.o
+]0;z1816768@turing: ~/csci_689-0001/assign8z1816768@turing:~/csci_689-0001/assign8$ ./assign8 amenity.dat
+
+ --------------------------------------------------------------------- 
+ Welcome to Assignment 8: 
+ --------------------------------------------------------------------- 
+ 3074 records input. 
+
+ Ranking by January Temperature 
+ =========================================================================
+           DADE   FL                        67.2
+        BROWARD   FL                        66.8
+         MONROE   FL                        65.6
+     PALM BEACH   FL                        65.5
+         MARTIN   FL                        65.4
+        COLLIER   FL                        65.2
+      CHARLOTTE   FL                          64
+            LEE   FL                        63.5
+      ST. LUCIE   FL                        63.5
+         HENDRY   FL                        63.4
+      HIGHLANDS   FL                        62.9
+         GLADES   FL                        62.7
+  ...
+           EDDY   ND                         3.8
+    GRAND FORKS   ND                         3.5
+        PEMBINA   ND                         3.3
+       BELTRAMI   MN                         3.1
+         TOWNER   ND                         3.1
+     PENNINGTON   MN                         2.7
+    LAKE OF THE   MN                         2.7
+      BOTTINEAU   ND                         1.7
+       MARSHALL   MN                         1.6
+         ROSEAU   MN                         1.4
+       CAVALIER   ND                         1.3
+        KITTSON   MN                         1.1
+
+
+  Ranking by January Sunshine 
+ =========================================================================
+         LA PAZ   AZ                         266
+           YUMA   AZ                         266
+           PIMA   AZ                         260
+         GRAHAM   AZ                         260
+        COCHISE   AZ                         260
+     SANTA CRUZ   AZ                         260
+       GREENLEE   AZ                         260
+         CATRON   NM                         258
+          GRANT   NM                         258
+           INYO   CA                         258
+       IMPERIAL   CA                         258
+        EL PASO   TX                         249
+  ...
+           COOS   OR                          49
+        LINCOLN   OR                          49
+      TILLAMOOK   OR                          49
+          CURRY   OR                          49
+        CLATSOP   OR                          49
+        PACIFIC   WA                          48
+   GRAYS HARBOR   WA                          48
+      JEFFERSON   WA                          48
+      WAHKIAKUM   WA                          48
+         ISLAND   WA                          48
+       SAN JUAN   WA                          48
+        CLALLAM   WA                          48
+
+
+ Ranking by July Temperature 
+ =========================================================================
+       SAN JUAN   CO                        55.5
+         SUMMIT   CO                        55.6
+        CLALLAM   WA                        55.9
+          GRAND   CO                        56.1
+       HINSDALE   CO                        56.1
+       HUMBOLDT   CA                        56.3
+      MENDOCINO   CA                        56.5
+           LAKE   CO                        56.6
+        LINCOLN   OR                        57.1
+        MINERAL   CO                          58
+      TILLAMOOK   OR                        58.1
+          TETON   WY                        58.2
+  ...
+        TERRELL   TX                        87.4
+       PRESIDIO   TX                        87.4
+       MAVERICK   TX                        87.8
+           WEBB   TX                        87.9
+         ZAPATA   TX                        87.9
+       JIM HOGG   TX                        87.9
+          CLARK   NV                        89.6
+          PINAL   AZ                        91.1
+       MARICOPA   AZ                        91.2
+       IMPERIAL   CA                          92
+           YUMA   AZ                        93.7
+         LA PAZ   AZ                        93.7
+
+
+  Ranking by July Humidity 
+ =========================================================================
+      ESMERALDA   NV                          14
+            NYE   NV                          14
+        MINERAL   NV                          14
+          CLARK   NV                          14
+        LINCOLN   NV                          14
+       IMPERIAL   CA                          18
+           INYO   CA                          18
+    CARSON CITY   NV                          19
+        SANPETE   UT                          19
+           ELKO   NV                          19
+         EUREKA   NV                          19
+         WASHOE   NV                          19
+  ...
+           LAKE   FL                          79
+         JASPER   SC                          79
+      LAFOURCHE   LA                          80
+      ASCENSION   LA                          80
+      ST. JAMES   LA                          80
+     TERREBONNE   LA                          80
+        ORLEANS   LA                          80
+   ST JOHN BAPT   LA                          80
+    ST. BERNARD   LA                          80
+    PLAQUEMINES   LA                          80
+      JEFFERSON   LA                          80
+    ST. CHARLES   LA                          80
+
+
+ Ranking by Landform 
+ =========================================================================
+        SANDERS   MT                          21
+        LINCOLN   MT                          21
+       MISSOULA   MT                          21
+        MINERAL   MT                          21
+       TUOLUMNE   CA                          21
+       SISKIYOU   CA                          21
+       BIG HORN   WY                          21
+           PARK   WY                          21
+        TRINITY   CA                          21
+     CLEARWATER   ID                          21
+         POWELL   MT                          21
+        RAVALLI   MT                          21
+  ...
+        MATHEWS   VA                           1
+       CAPE MAY   NJ                           1
+      CLARENDON   SC                           1
+       PINELLAS   FL                           1
+      CHARLOTTE   FL                           1
+        BROWARD   FL                           1
+        SAGINAW   MI                           1
+        COLLIER   FL                           1
+         MARTIN   FL                           1
+      HIGHLANDS   FL                           1
+            LEE   FL                           1
+           DADE   FL                           1
+
+
+ Ranking by Water Area 
+ ==========================================================================
+          ALGER   MI                     75.0256
+          DUKES   MA                     75.0256
+       LEELANAU   MI                     75.0256
+       KEWEENAW   MI                     75.0256
+   SAN FRANCISC   CA                     75.0256
+           DARE   NC                     75.0256
+      NANTUCKET   MA                     75.0256
+           DOOR   WI                     75.0256
+           LAKE   OH                     75.0256
+      MILWAUKEE   WI                     75.0256
+        OZAUKEE   WI                     75.0256
+   PRESQUE ISLE   MI                     74.3534
+  ...
+        SIMPSON   KY                        0.01
+        WALLACE   KS                        0.01
+        TERRELL   TX                        0.01
+     SCHLEICHER   TX                        0.01
+         GILMER   WV                        0.01
+          CRANE   TX                        0.01
+         TIPTON   IN                        0.01
+        GREELEY   KS                        0.01
+        WICHITA   KS                        0.01
+       CROCKETT   TX                        0.01
+       JIM HOGG   TX                        0.01
+       CHEYENNE   NE                        0.01
+
+
+ Composite Ranking 
+ ===========================================================================
+        VENTURA   CA                     8.47795
+   SANTA BARBAR   CA                     8.45805
+       HUMBOLDT   CA                     8.27907
+           LAKE   CO                      8.1369
+      DEL NORTE   CA                     8.09901
+      MENDOCINO   CA                     8.02001
+    LOS ANGELES   CA                     7.85669
+         SUMMIT   CO                      7.8036
+           MONO   CA                     7.62964
+   SAN FRANCISC   CA                     7.56278
+  ...
+         GRUNDY   IA                    -3.97748
+          DODGE   MN                    -3.98065
+          MOWER   MN                    -4.06761
+        CLINTON   IN                     -4.0927
+        SIMPSON   KY                    -4.21433
+      CHAMPAIGN   IL                    -4.21515
+         BENTON   IN                    -4.35747
+         WILKIN   MN                    -4.50899
+       RED LAKE   MN                    -4.63629
+         TIPTON   IN                    -5.13705
+
+ ---------------------------------* End *----------------------------------- 
+
+]0;z1816768@turing: ~/csci_689-0001/assign8z1816768@turing:~/csci_689-0001/assign8$ make clean
+rm *.o assign8
+]0;z1816768@turing: ~/csci_689-0001/assign8z1816768@turing:~/csci_689-0001/assign8$ exit
+
+Script done on Sun Nov  5 08:21:43 2017
