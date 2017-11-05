@@ -1,0 +1,436 @@
+Script started on Sun Nov  5 08:06:34 2017
+]0;z1816768@turing: ~/csci_689-0001/assign6z1816768@turing:~/csci_689-0001/assign6$ ls
+Makefile  assign6.cc  date.cc  date.h  lincoln.dat  name.cc  name.h  output  person.cc  person.h  place.cc  place.h  textCanvas.cc  textCanvas.h
+]0;z1816768@turing: ~/csci_689-0001/assign6z1816768@turing:~/csci_689-0001/assign6$ make
+g++ -Wall -std=c++11 -c assign6.cc
+g++ -Wall -std=c++11 -c person.cc
+g++ -Wall -std=c++11 -c name.cc
+g++ -Wall -std=c++11 -c date.cc
+g++ -Wall -std=c++11 -c place.cc
+g++ -Wall -std=c++11 -c textCanvas.cc
+g++ -Wall -std=c++11 -o assign6 assign6.o person.o name.o date.o place.o textCanvas.o
+]0;z1816768@turing: ~/csci_689-0001/assign6z1816768@turing:~/csci_689-0001/assign6$ ls
+Makefile  assign6.cc  date.cc  date.o       name.cc  name.o  person.cc  person.o  place.h  textCanvas.cc  textCanvas.o
+[0m[01;32massign6[0m   assign6.o   date.h   lincoln.dat  name.h   output  person.h   place.cc  place.o  textCanvas.h
+]0;z1816768@turing: ~/csci_689-0001/assign6z1816768@turing:~/csci_689-0001/assign6$ ./assign6 lincoln.dat
+ 
+---------------------------------* *-------------------------------------- 
+
+                                                                                
+                                                    Lincoln, Abraham----------  
+                                                    b. 13 May, 1744             
+                                                       , Berks, Pennsylvania    
+                          Lincoln, Thomas-----------d.  May, 1786               
+                          b. 6 Jan, 1776               Hughes Station, Jeffers  
+                             Linville Creek, Rocking|                           
+                          d. 17 Jan, 1851           Herrin(g), Bersheba-------  
+                             Farmington, Coles, IL  b.  ,                       
+                          |                            , ,                      
+Lincoln, Abraham----------|                         d.  , 1836                  
+b. 12 Feb, 1809           |                            , ,                      
+   , Hardin, KY           |                                                     
+d. 15 Apr, 1865           |                         Hanks, James--------------  
+   Washington D.C, ,      |                         b.  ,                       
+                          |                            , ,                      
+                          Hanks, Nancy--------------d.  ,                       
+                          b. 5 Feb, 1784               , ,                      
+                             Brookneal, Campbell, VA|                           
+                          d. 5 Oct, 1818            Shipley, Lucy-------------  
+                             Little Pigeon Creek, Spb.  ,                       
+                                                       , ,                      
+                                                    d.  ,                       
+                                                       , ,                      
+ 
+---------------------------------* *-------------------------------------- 
+
+ Move to F)ather, M)other, C)hild or Q)uit? F
+ 
+---------------------------------* *-------------------------------------- 
+
+                                                                                
+                                                    Lincoln, John-------------  
+                                                    b. 3 May, 1716              
+                                                       , ,                      
+                          Lincoln, Abraham----------d.  Nov, 1788               
+                          b. 13 May, 1744              Linville Creek, , VA     
+                             , Berks, Pennsylvania  |                           
+                          d.  May, 1786             Flowers, Rebecca----------  
+                             Hughes Station, Jeffersb.  ,                       
+                          |                            , ,                      
+Lincoln, Thomas-----------|                         d. 20 Jul, 1806             
+b. 6 Jan, 1776            |                            , ,                      
+   Linville Creek, Rocking|                                                     
+d. 17 Jan, 1851           |                         Herrin, Leonard-----------  
+   Farmington, Coles, IL  |                         b.  ,                       
+                          |                            , ,                      
+                          Herrin(g), Bersheba-------d.  ,                       
+                          b.  ,                        , ,                      
+                             , ,                    |                           
+                          d.  , 1836                --------------------------  
+                             , ,                                                
+                                                                                
+                                                                                
+                                                                                
+ 
+---------------------------------* *-------------------------------------- 
+
+ Move to F)ather, M)other, C)hild or Q)uit? F
+ 
+---------------------------------* *-------------------------------------- 
+
+                                                                                
+                                                    Lincoln, Mordecai---------  
+                                                    b. 24 Apr, 1686             
+                                                       Hingham, , MA            
+                          Lincoln, John-------------d. 12 May, 1736             
+                          b. 3 May, 1716               , ,                      
+                             , ,                    |                           
+                          d.  Nov, 1788             Salter, Hannah------------  
+                             Linville Creek, , VA   b.  ,                       
+                          |                            , ,                      
+Lincoln, Abraham----------|                         d.  ,                       
+b. 13 May, 1744           |                            , ,                      
+   , Berks, Pennsylvania  |                                                     
+d.  May, 1786             |                         |-------------------------  
+   Hughes Station, Jeffers|                         |                           
+                          |                         |                           
+                          Flowers, Rebecca----------|                           
+                          b.  ,                     |                           
+                             , ,                    |                           
+                          d. 20 Jul, 1806           --------------------------  
+                             , ,                                                
+                                                                                
+                                                                                
+                                                                                
+ 
+---------------------------------* *-------------------------------------- 
+
+ Move to F)ather, M)other, C)hild or Q)uit? F
+ 
+---------------------------------* *-------------------------------------- 
+
+                                                                                
+                                                    Lincoln, Mordecai---------  
+                                                    b. 14 Jun, 1657             
+                                                       Hingham, , MA            
+                          Lincoln, Mordecai---------d. 8 Nov, 1727              
+                          b. 24 Apr, 1686              , ,                      
+                             Hingham, , MA          |                           
+                          d. 12 May, 1736           Jones, Sarah--------------  
+                             , ,                    b.  ,                       
+                          |                            , ,                      
+Lincoln, John-------------|                         d. 17 Feb, 1701             
+b. 3 May, 1716            |                            , ,                      
+   , ,                    |                                                     
+d.  Nov, 1788             |                         Salter, Richard-----------  
+   Linville Creek, , VA   |                         b.  ,                       
+                          |                            , ,                      
+                          Salter, Hannah------------d.  ,                       
+                          b.  ,                        , ,                      
+                             , ,                    |                           
+                          d.  ,                     Bowne, Sarah--------------  
+                             , ,                    b.  ,                       
+                                                       , ,                      
+                                                    d.  ,                       
+                                                       , ,                      
+ 
+---------------------------------* *-------------------------------------- 
+
+ Move to F)ather, M)other, C)hild or Q)uit? F
+ 
+---------------------------------* *-------------------------------------- 
+
+                                                                                
+                                                    Lincoln, Samuel-----------  
+                                                    b. 24 Aug, 1622             
+                                                       , , England              
+                          Lincoln, Mordecai---------d. 26 May, 1690             
+                          b. 14 Jun, 1657              Hingham, , MA            
+                             Hingham, , MA          |                           
+                          d. 8 Nov, 1727            , Martha------------------  
+                             , ,                    b.  ,                       
+                          |                            , ,                      
+Lincoln, Mordecai---------|                         d. 10 Apr, 1693             
+b. 24 Apr, 1686           |                            , ,                      
+   Hingham, , MA          |                                                     
+d. 12 May, 1736           |                         Jones, Abraham------------  
+   , ,                    |                         b.  ,                       
+                          |                            , ,                      
+                          Jones, Sarah--------------d.  ,                       
+                          b.  ,                        , ,                      
+                             , ,                    |                           
+                          d. 17 Feb, 1701           --------------------------  
+                             , ,                                                
+                                                                                
+                                                                                
+                                                                                
+ 
+---------------------------------* *-------------------------------------- 
+
+ Move to F)ather, M)other, C)hild or Q)uit? F
+ 
+---------------------------------* *-------------------------------------- 
+
+                                                                                
+                                                    |-------------------------  
+                                                    |                           
+                                                    |                           
+                          Lincoln, Samuel-----------|                           
+                          b. 24 Aug, 1622           |                           
+                             , , England            |                           
+                          d. 26 May, 1690           --------------------------  
+                             Hingham, , MA                                      
+                          |                                                     
+Lincoln, Mordecai---------|                                                     
+b. 14 Jun, 1657           |                                                     
+   Hingham, , MA          |                                                     
+d. 8 Nov, 1727            |                         |-------------------------  
+   , ,                    |                         |                           
+                          |                         |                           
+                          , Martha------------------|                           
+                          b.  ,                     |                           
+                             , ,                    |                           
+                          d. 10 Apr, 1693           --------------------------  
+                             , ,                                                
+                                                                                
+                                                                                
+                                                                                
+ 
+---------------------------------* *-------------------------------------- 
+
+ Move to F)ather, M)other, C)hild or Q)uit? F
+ 
+---------------------------------* *-------------------------------------- 
+
+                                                                                
+                                                    |-------------------------  
+                                                    |                           
+                                                    |                           
+                          |-------------------------|                           
+                          |                         |                           
+                          |                         |                           
+                          |                         --------------------------  
+                          |                                                     
+                          |                                                     
+Lincoln, Samuel-----------|                                                     
+b. 24 Aug, 1622           |                                                     
+   , , England            |                                                     
+d. 26 May, 1690           |                         |-------------------------  
+   Hingham, , MA          |                         |                           
+                          |                         |                           
+                          --------------------------|                           
+                                                    |                           
+                                                    |                           
+                                                    --------------------------  
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+ 
+---------------------------------* *-------------------------------------- 
+
+ Move to F)ather, M)other, C)hild or Q)uit? F
+ 
+---------------------------------* *-------------------------------------- 
+
+ Sorry data unavailable!!!  
+--------------------------------- End -------------------------------------- 
+
+]0;z1816768@turing: ~/csci_689-0001/assign6z1816768@turing:~/csci_689-0001/assign6$ ./assign6 lincoln.dat
+ 
+---------------------------------* *-------------------------------------- 
+
+                                                                                
+                                                    Lincoln, Abraham----------  
+                                                    b. 13 May, 1744             
+                                                       , Berks, Pennsylvania    
+                          Lincoln, Thomas-----------d.  May, 1786               
+                          b. 6 Jan, 1776               Hughes Station, Jeffers  
+                             Linville Creek, Rocking|                           
+                          d. 17 Jan, 1851           Herrin(g), Bersheba-------  
+                             Farmington, Coles, IL  b.  ,                       
+                          |                            , ,                      
+Lincoln, Abraham----------|                         d.  , 1836                  
+b. 12 Feb, 1809           |                            , ,                      
+   , Hardin, KY           |                                                     
+d. 15 Apr, 1865           |                         Hanks, James--------------  
+   Washington D.C, ,      |                         b.  ,                       
+                          |                            , ,                      
+                          Hanks, Nancy--------------d.  ,                       
+                          b. 5 Feb, 1784               , ,                      
+                             Brookneal, Campbell, VA|                           
+                          d. 5 Oct, 1818            Shipley, Lucy-------------  
+                             Little Pigeon Creek, Spb.  ,                       
+                                                       , ,                      
+                                                    d.  ,                       
+                                                       , ,                      
+ 
+---------------------------------* *-------------------------------------- 
+
+ Move to F)ather, M)other, C)hild or Q)uit? F
+ 
+---------------------------------* *-------------------------------------- 
+
+                                                                                
+                                                    Lincoln, John-------------  
+                                                    b. 3 May, 1716              
+                                                       , ,                      
+                          Lincoln, Abraham----------d.  Nov, 1788               
+                          b. 13 May, 1744              Linville Creek, , VA     
+                             , Berks, Pennsylvania  |                           
+                          d.  May, 1786             Flowers, Rebecca----------  
+                             Hughes Station, Jeffersb.  ,                       
+                          |                            , ,                      
+Lincoln, Thomas-----------|                         d. 20 Jul, 1806             
+b. 6 Jan, 1776            |                            , ,                      
+   Linville Creek, Rocking|                                                     
+d. 17 Jan, 1851           |                         Herrin, Leonard-----------  
+   Farmington, Coles, IL  |                         b.  ,                       
+                          |                            , ,                      
+                          Herrin(g), Bersheba-------d.  ,                       
+                          b.  ,                        , ,                      
+                             , ,                    |                           
+                          d.  , 1836                --------------------------  
+                             , ,                                                
+                                                                                
+                                                                                
+                                                                                
+ 
+---------------------------------* *-------------------------------------- 
+
+ Move to F)ather, M)other, C)hild or Q)uit? M
+ 
+---------------------------------* *-------------------------------------- 
+
+                                                                                
+                                                    |-------------------------  
+                                                    |                           
+                                                    |                           
+                          Herrin, Leonard-----------|                           
+                          b.  ,                     |                           
+                             , ,                    |                           
+                          d.  ,                     --------------------------  
+                             , ,                                                
+                          |                                                     
+Herrin(g), Bersheba-------|                                                     
+b.  ,                     |                                                     
+   , ,                    |                                                     
+d.  , 1836                |                         |-------------------------  
+   , ,                    |                         |                           
+                          |                         |                           
+                          --------------------------|                           
+                                                    |                           
+                                                    |                           
+                                                    --------------------------  
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+ 
+---------------------------------* *-------------------------------------- 
+
+ Move to F)ather, M)other, C)hild or Q)uit? M C
+ 
+---------------------------------* *-------------------------------------- 
+
+                                                                                
+                                                    Lincoln, John-------------  
+                                                    b. 3 May, 1716              
+                                                       , ,                      
+                          Lincoln, Abraham----------d.  Nov, 1788               
+                          b. 13 May, 1744              Linville Creek, , VA     
+                             , Berks, Pennsylvania  |                           
+                          d.  May, 1786             Flowers, Rebecca----------  
+                             Hughes Station, Jeffersb.  ,                       
+                          |                            , ,                      
+Lincoln, Thomas-----------|                         d. 20 Jul, 1806             
+b. 6 Jan, 1776            |                            , ,                      
+   Linville Creek, Rocking|                                                     
+d. 17 Jan, 1851           |                         Herrin, Leonard-----------  
+   Farmington, Coles, IL  |                         b.  ,                       
+                          |                            , ,                      
+                          Herrin(g), Bersheba-------d.  ,                       
+                          b.  ,                        , ,                      
+                             , ,                    |                           
+                          d.  , 1836                --------------------------  
+                             , ,                                                
+                                                                                
+                                                                                
+                                                                                
+ 
+---------------------------------* *-------------------------------------- 
+
+ Move to F)ather, M)other, C)hild or Q)uit? F
+ 
+---------------------------------* *-------------------------------------- 
+
+                                                                                
+                                                    Lincoln, Mordecai---------  
+                                                    b. 24 Apr, 1686             
+                                                       Hingham, , MA            
+                          Lincoln, John-------------d. 12 May, 1736             
+                          b. 3 May, 1716               , ,                      
+                             , ,                    |                           
+                          d.  Nov, 1788             Salter, Hannah------------  
+                             Linville Creek, , VA   b.  ,                       
+                          |                            , ,                      
+Lincoln, Abraham----------|                         d.  ,                       
+b. 13 May, 1744           |                            , ,                      
+   , Berks, Pennsylvania  |                                                     
+d.  May, 1786             |                         |-------------------------  
+   Hughes Station, Jeffers|                         |                           
+                          |                         |                           
+                          Flowers, Rebecca----------|                           
+                          b.  ,                     |                           
+                             , ,                    |                           
+                          d. 20 Jul, 1806           --------------------------  
+                             , ,                                                
+                                                                                
+                                                                                
+                                                                                
+ 
+---------------------------------* *-------------------------------------- 
+
+ Move to F)ather, M)other, C)hild or Q)uit? M
+ 
+---------------------------------* *-------------------------------------- 
+
+                                                                                
+                                                    |-------------------------  
+                                                    |                           
+                                                    |                           
+                          |-------------------------|                           
+                          |                         |                           
+                          |                         |                           
+                          |                         --------------------------  
+                          |                                                     
+                          |                                                     
+Flowers, Rebecca----------|                                                     
+b.  ,                     |                                                     
+   , ,                    |                                                     
+d. 20 Jul, 1806           |                         |-------------------------  
+   , ,                    |                         |                           
+                          |                         |                           
+                          --------------------------|                           
+                                                    |                           
+                                                    |                           
+                                                    --------------------------  
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+ 
+---------------------------------* *-------------------------------------- 
+
+ Move to F)ather, M)other, C)hild or Q)uit? M
+ 
+---------------------------------* *-------------------------------------- 
+
+ Sorry data unavailable!!!  
+--------------------------------- End -------------------------------------- 
+
+]0;z1816768@turing: ~/csci_689-0001/assign6z1816768@turing:~/csci_689-0001/assign6$ make clean
+rm *.o assign6
+]0;z1816768@turing: ~/csci_689-0001/assign6z1816768@turing:~/csci_689-0001/assign6$ exit
+
+Script done on Sun Nov  5 08:08:09 2017
