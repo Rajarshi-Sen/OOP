@@ -1,0 +1,81 @@
+Script started on Sun Nov  5 08:22:42 2017
+]0;z1816768@turing: ~/csci_689-0001/assign9z1816768@turing:~/csci_689-0001/assign9$ ls
+Makefile  output  vectorN.h  vectortest.cc
+]0;z1816768@turing: ~/csci_689-0001/assign9z1816768@turing:~/csci_689-0001/assign9$ make
+g++ -Wall -std=c++11 -c vectortest.cc
+g++ -Wall -std=c++11 -o vectortest vectortest.cc
+]0;z1816768@turing: ~/csci_689-0001/assign9z1816768@turing:~/csci_689-0001/assign9$ ls
+Makefile  output  vectorN.h  [0m[01;32mvectortest[0m  vectortest.cc  vectortest.o
+]0;z1816768@turing: ~/csci_689-0001/assign9z1816768@turing:~/csci_689-0001/assign9$ ./vectortest
+
+Test 1: Default constructor and printing
+
+v1: []
+
+Test 2: Array constructor and printing
+
+v2: [11.6, -2.3, 23.45]
+
+Test 3: Clear and size
+
+The size of v3: [11.6, -2.3, 23.45] is 3
+After clearing, the size of v3: [] is 0
+
+Test 4: Subscripting
+
+v4: [First, Second, Third, Fourth, Fifth]
+v4[0]: First  v4[1]: Second
+v4[2]: Third  v4[3]: Fourth
+v4[4]: Fifth
+v5: [Sixth, Seventh, Eighth, Ninth, Fifth]
+
+Test 5: Copy constructor
+
+v6: [11.6, -2.3, 23.45] size: 3
+v7: [11.6, -2.3, 23.45] size: 3
+v8: [First, Second, Third, Fourth, Fifth] size: 5
+v9: [First, Second, Third, Fourth, Fifth] size: 5
+Changing...
+v8: [First, Test, Third, Fourth, Fifth] size: 5
+v9: [First, Second, Third, Fourth, Fifth] size: 5
+
+Test 6: Assignment operator
+
+v10: [First, Second, Third, Fourth, Fifth]
+v11: []
+v10: [Zeroth, Second, Third, Fourth, Fifth]
+v11: [First, Second, Third, Fourth, Fifth]
+
+v11: [First, Second, Third, Fourth, Fifth]
+v12: []
+v13: []
+v11: [Success?, Second, Third, Fourth, Fifth]
+v12: [First, Second, Third, Fourth, Fifth]
+v13: [First, Second, Third, Fourth, Fifth]
+
+v13: [First, Second, Third, Fourth, Fifth]
+
+Test 7: Equality
+
+[2, 3, 3] and [2, 3, 3] are equal
+[2, 3, 3] and [2, 3, -3] are not equal
+[2, 3, 3] and [2, 3, 3, 0] are not equal
+[2, 3, -3, 0] and [2, 3, -3] are not equal
+
+Test 8: Addition
+
+v22: [-5, 2, 6, 14, 0, 0, -6, 8]
+v23: [2, 9, -3, 7, 8, -1, 2]
+v24 (v22+v23): [-3, 11, 3, 21, 8, -1, -4]
+v22: [-5, 2, 6, 14, 0, 0, -6, 8]
+v23: [2, 9, -3, 7, 8, -1, 2]
+v24 (v23 + v22): [-3, 11, 3, 21, 8, -1, -4]
+
+v25: [Holly, surf, face, light]
+v26: [wood, board, book, house]
+v25+v26: [Hollywood, surfboard, facebook, lighthouse]
+]0;z1816768@turing: ~/csci_689-0001/assign9z1816768@turing:~/csci_689-0001/assign9$ make clean
+rm *.o vectortest
+]0;z1816768@turing: ~/csci_689-0001/assign9z1816768@turing:~/csci_689-0001/assign9$ exit
+
+Script done on Sun Nov  5 08:23:07 2017
