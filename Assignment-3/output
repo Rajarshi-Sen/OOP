@@ -1,0 +1,47 @@
+Script started on Sat Nov  4 20:09:10 2017
+]0;z1816768@turing: ~/csci_689-0001/assign3z1816768@turing:~/csci_689-0001/assign3$ ma  ls
+Makefile  assign3HelperFunctions.h  fileHandlingFunctions.cc  generate.cc  inputParseFunctions.cc  output.pdf  thresh.cc
+]0;z1816768@turing: ~/csci_689-0001/assign3z1816768@turing:~/csci_689-0001/assign3$ make
+g++ -Wall -std=c++11  -c generate.cc
+g++ -Wall -std=c++11  -c inputParseFunctions.cc
+g++ -Wall -std=c++11  -c fileHandlingFunctions.cc
+g++ -Wall -std=c++11  -o generate generate.o inputParseFunctions.o fileHandlingFunctions.o
+g++ -Wall -std=c++11  -c thresh.cc
+g++ -Wall -std=c++11  -o thresh thresh.o inputParseFunctions.o fileHandlingFunctions.o
+]0;z1816768@turing: ~/csci_689-0001/assign3z1816768@turing:~/csci_689-0001/assign3$ ls
+Makefile                  fileHandlingFunctions.cc  [0m[01;32mgenerate[0m     generate.o              inputParseFunctions.o  [01;32mthresh[0m     thresh.o
+assign3HelperFunctions.h  fileHandlingFunctions.o   generate.cc  inputParseFunctions.cc  output.pdf             thresh.cc
+]0;z1816768@turing: ~/csci_689-0001/assign3z1816768@turing:~/csci_689-0001/assign3$ ./generate
+
+----------------------------------------------------------------
+ Welcome to the program for Generating the output file: 
+----------------------------------------------------------------
+ Please enter the random number seed: 7
+ Please enter the upper bound: 98
+ Please enter the number of values to be generated: 77
+ Please enter the output filename: myGeneratedFile
+
+ Successfully written to the file: myGeneratedFile
+
+===============================================================
+]0;z1816768@turing: ~/csci_689-0001/assign3z1816768@turing:~/csci_689-0001/assign3$ ls
+Makefile                  fileHandlingFunctions.cc  [0m[01;32mgenerate[0m     generate.o              inputParseFunctions.o  output.pdf  thresh.cc
+assign3HelperFunctions.h  fileHandlingFunctions.o   generate.cc  inputParseFunctions.cc  myGeneratedFile        [01;32mthresh[0m      thresh.o
+]0;z1816768@turing: ~/csci_689-0001/assign3z1816768@turing:~/csci_689-0001/assign3$ ./thresh
+
+-------------------------------------------------------------------------------------------
+ Welcome to the program for getting a report of how many values are greater than the user inputted threshold 
+-----------------------------------------------------------------------------------------------
+ Please enter the threshold value: 43
+ Please enter the input filename: myGeneratedFile
+
+ Report: 48 of the 77 values in myGeneratedFile are greater than 43
+================================================================================================
+
+]0;z1816768@turing: ~/csci_689-0001/assign3z1816768@turing:~/csci_689-0001/assign3$ make    mak   l make clean
+rm *.o generate thresh
+]0;z1816768@turing: ~/csci_689-0001/assign3z1816768@turing:~/csci_689-0001/assign3$ ls
+Makefile  assign3HelperFunctions.h  fileHandlingFunctions.cc  generate.cc  inputParseFunctions.cc  myGeneratedFile  output.pdf  thresh.cc
+]0;z1816768@turing: ~/csci_689-0001/assign3z1816768@turing:~/csci_689-0001/assign3$ exit
+
+Script done on Sat Nov  4 20:11:23 2017
