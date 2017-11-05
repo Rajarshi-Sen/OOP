@@ -1,0 +1,34 @@
+Script started on Sat Nov  4 20:22:59 2017
+]0;z1816768@turing: ~/csci_689-0001/assign4z1816768@turing:~/csci_689-0001/assign4$ make    ls
+Makefile  a4-in.txt  output  processFile.cc  processFile.h  process_data.cc
+]0;z1816768@turing: ~/csci_689-0001/assign4z1816768@turing:~/csci_689-0001/assign4$ make
+g++ -Wall -std=c++11 -c processFile.cc
+g++ -Wall -std=c++11 -c process_data.cc
+g++ -Wall -std=c++11 -o assign4 processFile.o process_data.o
+]0;z1816768@turing: ~/csci_689-0001/assign4z1816768@turing:~/csci_689-0001/assign4$ ls
+Makefile  a4-in.txt  [0m[01;32massign4[0m  output  processFile.cc  processFile.h  processFile.o  process_data.cc  process_data.o
+]0;z1816768@turing: ~/csci_689-0001/assign4z1816768@turing:~/csci_689-0001/assign4$ ./assign4
+
+ ------------------------------------------------------------------------------------ 
+
+ Insufficient arguments 
+./assign4:
+ It takes two command line arguments in the following order:
+ 1. Input file-name
+ 2. Output file-name
+ It replaces the line comments with block comments into the output file.
+]0;z1816768@turing: ~/csci_689-0001/assign4z1816768@turing:~/csci_689-0001/assign4$ ./assign 4    4 a4-in.txt a4-out.txt
+
+ ------------------------------------------------------------------------------------ 
+
+ Processing the input file. 
+ Line comments in file: a4-in.txt is converted to Block comments in file: a4-out.txt
+ ============================================================================================ 
+
+]0;z1816768@turing: ~/csci_689-0001/assign4z1816768@turing:~/csci_689-0001/assign4$ make clean
+rm *.o assign4
+]0;z1816768@turing: ~/csci_689-0001/assign4z1816768@turing:~/csci_689-0001/assign4$ ls
+Makefile  a4-in.txt  a4-out.txt  output  processFile.cc  processFile.h  process_data.cc
+]0;z1816768@turing: ~/csci_689-0001/assign4z1816768@turing:~/csci_689-0001/assign4$ exit
+
+Script done on Sat Nov  4 20:24:23 2017
